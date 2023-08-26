@@ -7,12 +7,15 @@
 */
 void reverse_array(int *a, int n)
 {
-	int i, j, t;
+int start;
+start = 0;
 
-	for (i = 0; j = (n - 1); i < J; i++, j--)
-	{
-		t = a[i];
-		a[i] = a[j];
-		a[j] = t;
-	}
+while (start < n)
+{
+int temp = a[start];
+a[start] = a[n];
+a[n] = temp;
+start++;
+n--;
+}
 }
